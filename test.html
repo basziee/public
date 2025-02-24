@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .alert-container {
+            background-color: #ffcc00;
+            padding: 10px;
+            border: 1px solid #ff9900;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .scrolling-text {
+            font-size: 18px;
+            color: #000;
+            animation: scroll-left 10s linear infinite;
+        }
+        @keyframes scroll-left {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="alert-container">
+        <div class="scrolling-text">
+            ⚠️ Active Incident: [Insert incident details here]. Please take necessary actions.
+        </div>
+    </div>
+</body>
+</html>
